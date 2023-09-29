@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pico</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a41d3240c2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <main
+      class="container"
+      style="display: flex; justify-content: center; align-items: center"
+    >
+      <article
+        style="margin: 0%; text-align: center; width: 40%; padding-bottom: 0px"
+      >
+        <hgroup>
+          <h1>Pokédex API</h1>
+          <p>By José Antonio Rosales</p>
+        </hgroup>
+        <div>
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Search pokemon by name or ID..."
+          />
+          <button class="contrast" onclick="searchPokemon()">Search</button>
+        </div>
+        <div id="pokedex"></div>
+        <p>
+          <button
+            role="button"
+            id="themeButton"
+            class="contrast"
+            data-tooltip="Toggle theme"
+            style="width: 100%; height: auto"
+          >
+            <i class="fa-solid fa-circle-half-stroke"></i>
+          </button>
+        </p>
+      </article>
+    </main>
+    <script src="pokedex.js"></script>
+    <script src="theme.js"></script>
+  </body>
+</html>
